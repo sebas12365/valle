@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Atracciones - La Marquesa</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#243423",
+                        "secondary": "#eec058",
+                        "on-secondary": "#402d00",
+                        "background": "#14130f",
+                        "on-primary-fixed": "#0f1f10",
+                        "primary-fixed": "#d4e8cf",
+                        "tertiary": "#3de273",
+                        "surface": "#14130f",
+                        "inverse-surface": "#e7e2da",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-high": "#2b2a25",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#005322",
+                        "tertiary-container": "#001c07",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-container-low": "#1d1c17",
+                        "outline-variant": "#434842",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "on-secondary-container": "#fff3e1",
+                        "on-background": "#e7e2da",
+                        "on-primary-fixed-variant": "#3a4b39",
+                        "on-tertiary-container": "#009443",
+                        "primary-container": "#0a1a0b",
+                        "on-primary-container": "#728570",
+                        "surface-tint": "#b8ccb4",
+                        "inverse-on-surface": "#32302b",
+                        "secondary-container": "#8e6a00",
+                        "tertiary-fixed-dim": "#3de273",
+                        "tertiary-fixed": "#66ff8e",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#36352f",
+                        "secondary-fixed": "#ffdf9f",
+                        "surface-dim": "#14130f",
+                        "surface-bright": "#3b3934",
+                        "surface-container": "#21201b",
+                        "on-tertiary": "#003915",
+                        "primary": "#b8ccb4",
+                        "on-surface": "#e7e2da",
+                        "on-surface-variant": "#c4c8bf",
+                        "surface-variant": "#36352f",
+                        "outline": "#8e928a",
+                        "primary-fixed-dim": "#b8ccb4",
+                        "inverse-primary": "#51634f",
+                        "on-tertiary-fixed": "#002109",
+                        "surface-container-lowest": "#0f0e0a",
+                        "secondary-fixed-dim": "#eec058",
+                        "error": "#ffb4ab",
+                        "whatsapp": "#25D366"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "section-padding-mobile": "60px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "max-width": "1280px",
+                        "section-padding": "100px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "accent-label": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "accent-label": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "headline-md": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "headline-sm": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Glow Effects */
+        .gold-glow-hover:hover {
+            box-shadow: 0 0 10px rgba(238, 192, 88, 0.5);
+            border-color: #eec058;
+        }
+    </style>
+    <link rel="stylesheet" href="static/css/theme-transitions.css">
+</head>
+
+<body
+    class="bg-background text-on-background antialiased selection:bg-secondary selection:text-on-secondary flex flex-col min-h-screen">
+    <!-- TopNavBar -->
+    <!-- TopNavBar -->
+    <nav class="bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-secondary/30 transition-all duration-300"
+        id="main-nav">
+        <div class="max-w-max-width mx-auto flex justify-between items-center px-gutter py-4">
+            <a class="font-headline-sm text-headline-sm text-secondary tracking-tight" href="index.html">La Marquesa</a>
+            <div class="hidden md:flex space-x-8 items-center" id="nav-links-container">
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="index.html">INICIO</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="atracciones.html">ATRACCIONES</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="menu.html">MENÚ</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="barra.html">LA BARRA</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="galeria.html">GALERÍA</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="ubicacion.html">UBICACIÓN</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button aria-label="chat" class="text-secondary hover:scale-105 transition-transform duration-300">
+                    <span class="material-symbols-outlined" data-icon="chat">chat</span>
+                </button>
+                <button class="md:hidden text-secondary" id="mobile-menu-btn" aria-label="Menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Canvas -->
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[716px] min-h-[500px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="Forest hero image" class="w-full h-full object-cover" src="static/img/la-marquesa-c.jpg" />
+                <div class="absolute inset-0 bg-background/60"></div>
+            </div>
+            <div class="relative z-10 text-center px-gutter max-w-4xl mx-auto">
+                <h1
+                    class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-stack-md text-balance">
+                    Aventura en la Montaña</h1>
+                <div class="w-10 h-px bg-secondary mx-auto"></div>
+            </div>
+        </section>
+        <!-- Attraction: Gotcha -->
+        <section class="py-section-padding-mobile md:py-section-padding px-gutter max-w-max-width mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-[55%]">
+                    <div
+                        class="aspect-[4/3] rounded overflow-hidden border border-transparent gold-glow-hover transition-all duration-300 bg-surface-container">
+                        <img alt="Gotcha paintball" class="w-full h-full object-cover"
+                            src="static/img/gotcha-01-768x576.jpg" />
+                    </div>
+                </div>
+                <div class="w-full md:w-[45%] flex flex-col justify-center">
+                    <span
+                        class="font-accent-label text-accent-label text-secondary uppercase tracking-widest mb-stack-sm">Estrategia
+                        y Acción</span>
+                    <h2 class="font-headline-md text-headline-md text-on-background mb-stack-md">Gotcha: Paintball en el
+                        Bosque</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Adéntrate en escenarios
+                        naturales diseñados para la máxima adrenalina. Nuestro campo de gotcha aprovecha la topografía
+                        real de la montaña, ofreciendo barricadas de madera rústica y refugios naturales para una
+                        experiencia táctica inmersiva.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Divider -->
+        <div class="w-full max-w-max-width mx-auto px-gutter">
+            <div class="w-full h-px bg-surface-variant"></div>
+        </div>
+        <!-- Attraction: Cuatrimotos (Reversed) -->
+        <section class="py-section-padding-mobile md:py-section-padding px-gutter max-w-max-width mx-auto">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="w-full md:w-[55%]">
+                    <div
+                        class="aspect-[4/3] rounded overflow-hidden border border-transparent gold-glow-hover transition-all duration-300 bg-surface-container">
+                        <img alt="ATV riding" class="w-full h-full object-cover"
+                            data-alt="A sleek, professional shot of an ATV (quad bike) parked on a rugged, misty dirt trail surrounded by dense Oyamel fir trees. The mood is sophisticated and adventurous, reminiscent of a luxury car commercial. The lighting is low-key, emphasizing the silhouette of the vehicle against the dark, atmospheric forest background. The color palette heavily features deep 'Obsidian' blacks and muted 'Forest' greens, accented by the soft, diffused light of an overcast sky, ensuring a premium, quiet aesthetic."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa5rblS5MbLLXQ9ov1IMl3n5EXVMdTRuk-8eSrk2NCIIL8Ek5Qw7YADT9tDZgzIuSya-VKUoGuSztlOdmmV7TjMJvap7R462qKAtsHAZ3BV5UZMR_3GpKl7sgqZcye1sqqB03YEr4mS8uz5Vb3le_e-qz01-ZA-g_kt8qeDsEkfK5i68Hg9DnRuEvV6l8_3AWYtL_6CUxC4nao23aWQVAB7HKJArGnZIfi3SdyWDB85Eugss42BZ2x9vweNWI00YFgJ-hi-RqT_mc" />
+                    </div>
+                </div>
+                <div class="w-full md:w-[45%] flex flex-col justify-center">
+                    <span
+                        class="font-accent-label text-accent-label text-secondary uppercase tracking-widest mb-stack-sm">Exploración
+                        a Motor</span>
+                    <h2 class="font-headline-md text-headline-md text-on-background mb-stack-md">Cuatrimotos: Senderos
+                        de Oyameles</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Domina los caminos
+                        escarpados a bordo de nuestros vehículos todo terreno. Recorre kilómetros de senderos privados
+                        flanqueados por majestuosos oyameles, descubriendo rincones ocultos y miradores espectaculares
+                        de la región.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Divider -->
+        <div class="w-full max-w-max-width mx-auto px-gutter">
+            <div class="w-full h-px bg-surface-variant"></div>
+        </div>
+        <!-- Attraction: Tirolesas -->
+        <section class="py-section-padding-mobile md:py-section-padding px-gutter max-w-max-width mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-[55%]">
+                    <div
+                        class="aspect-[4/3] rounded overflow-hidden border border-transparent gold-glow-hover transition-all duration-300 bg-surface-container">
+                        <img alt="Ziplining" class="w-full h-full object-cover"
+                            src="static/img/Canopy-Las-Golondrinas-1-e1635561376796.jpg" />
+                    </div>
+                </div>
+                <div class="w-full md:w-[45%] flex flex-col justify-center">
+                    <span
+                        class="font-accent-label text-accent-label text-secondary uppercase tracking-widest mb-stack-sm">Vuelo
+                        en las Alturas</span>
+                    <h2 class="font-headline-md text-headline-md text-on-background mb-stack-md">Tirolesas: Vistas
+                        Panorámicas</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Siente la libertad de volar
+                        sobre la copa de los árboles. Nuestras líneas de acero atraviesan los valles ofreciendo una
+                        perspectiva inigualable del paisaje boscoso, combinando seguridad de primera clase con vistas
+                        sobrecogedoras.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Divider -->
+        <div class="w-full max-w-max-width mx-auto px-gutter">
+            <div class="w-full h-px bg-surface-variant"></div>
+        </div>
+        <!-- Attraction: Paseo a Caballo -->
+        <section class="py-section-padding-mobile md:py-section-padding px-gutter max-w-max-width mx-auto">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="w-full md:w-[55%]">
+                    <div
+                        class="aspect-[4/3] rounded overflow-hidden border border-transparent gold-glow-hover transition-all duration-300 bg-surface-container">
+                        <img alt="Paseo a Caballo" class="w-full h-full object-cover"
+                            src="static/img/caballo.jpg" />
+                    </div>
+                </div>
+                <div class="w-full md:w-[45%] flex flex-col justify-center">
+                    <span
+                        class="font-accent-label text-accent-label text-secondary uppercase tracking-widest mb-stack-sm">Tranquilidad
+                        y Naturaleza</span>
+                    <h2 class="font-headline-md text-headline-md text-on-background mb-stack-md">Paseo a Caballo</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Paseo a caballo por todo el valle, con hermosos caballos, una gran experiencia y aprendizaje.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Group Booking Strip -->
+        <section class="bg-surface-container-highest py-16 mt-section-padding">
+                        <div class="max-w-4xl mx-auto px-gutter text-center flex flex-col items-center">
+                            <h3 class="font-headline-sm text-headline-sm text-on-background mb-4">¿Vienes en grupo?</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-2xl">Organizamos
+                                experiencias personalizadas para retiros corporativos, celebraciones familiares y grupos
+                                grandes. Obtén tarifas especiales y atención dedicada.</p>
+                            <a class="inline-flex items-center justify-center px-8 py-3 bg-[#25D366] text-white font-accent-label text-accent-label hover:bg-[#20bd5a] transition-colors rounded"
+                                href="#">
+                                <span class="material-symbols-outlined mr-2 text-[18px]" data-icon="forum">forum</span>
+                                CONTACTAR POR WHATSAPP
+                            </a>
+                        </div>
+                    </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest w-full border-t border-secondary/30">
+        <div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-3 gap-stack-lg px-gutter py-section-padding">
+            <div class="font-headline-sm text-headline-sm text-secondary">
+                La Marquesa
+            </div>
+            <div class="flex flex-col space-y-2">
+                <a class="font-accent-label text-accent-label text-on-background/70 hover:text-secondary hover:text-tertiary transition-colors"
+                    href="index.html">Inicio</a>
+                <a class="font-accent-label text-accent-label text-secondary hover:text-tertiary transition-colors translate-y-[-2px] transition-transform"
+                    href="atracciones.html">Atracciones</a>
+                <a class="font-accent-label text-accent-label text-on-background/70 hover:text-secondary hover:text-tertiary transition-colors"
+                    href="menu.html">Menú</a>
+            </div>
+            <div class="flex flex-col space-y-2">
+                <a class="font-accent-label text-accent-label text-on-background/70 hover:text-secondary hover:text-tertiary transition-colors"
+                    href="barra.html">La Barra</a>
+                <a class="font-accent-label text-accent-label text-on-background/70 hover:text-secondary hover:text-tertiary transition-colors"
+                    href="galeria.html">Galería</a>
+                <a class="font-accent-label text-accent-label text-on-background/70 hover:text-secondary hover:text-tertiary transition-colors"
+                    href="ubicacion.html">Ubicación</a>
+            </div>
+        </div>
+        <div class="max-w-max-width mx-auto px-gutter pb-8 text-center md:text-left">
+            <span class="font-body-md text-body-md text-on-background/70">© 2026 La Marquesa. Todos los derechos
+                reservados.</span>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a aria-label="Chat en WhatsApp"
+        class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300"
+        href="#">
+        <span class="material-symbols-outlined text-white" data-icon="chat"
+            style="font-variation-settings: 'FILL' 1;">chat</span>
+    </a>
+    <script src="static/js/theme-transitions.js"></script>
+</body>
+
+</html>

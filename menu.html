@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>La Marquesa - Nuestro Menú</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@100..900&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "surface-container-highest": "#36352f",
+                                                "surface-bright": "#3b3934",
+                                                "surface-container-lowest": "#0f0e0a",
+                                                "on-tertiary": "#003915",
+                                                "on-tertiary-fixed-variant": "#005322",
+                                                "secondary": "#eec058",
+                                                "on-primary-fixed-variant": "#3a4b39",
+                                                "on-error": "#690005",
+                                                "on-secondary-container": "#fff3e1",
+                                                "on-primary": "#243423",
+                                                "on-secondary": "#402d00",
+                                                "outline": "#8e928a",
+                                                "secondary-fixed": "#ffdf9f",
+                                                "on-tertiary-container": "#009443",
+                                                "surface-container-low": "#1d1c17",
+                                                "on-primary-container": "#728570",
+                                                "primary-container": "#0a1a0b",
+                                                "on-secondary-fixed": "#261a00",
+                                                "surface-container-high": "#2b2a25",
+                                                "primary": "#b8ccb4",
+                                                "surface-tint": "#b8ccb4",
+                                                "error": "#ffb4ab",
+                                                "tertiary-fixed-dim": "#3de273",
+                                                "secondary-fixed-dim": "#eec058",
+                                                "inverse-primary": "#51634f",
+                                                "surface": "#14130f",
+                                                "inverse-on-surface": "#32302b",
+                                                "outline-variant": "#434842",
+                                                "surface-variant": "#36352f",
+                                                "tertiary": "#3de273",
+                                                "on-surface-variant": "#c4c8bf",
+                                                "primary-fixed": "#d4e8cf",
+                                                "on-tertiary-fixed": "#002109",
+                                                "on-background": "#e7e2da",
+                                                "tertiary-container": "#001c07",
+                                                "primary-fixed-dim": "#b8ccb4",
+                                                "background": "#14130f",
+                                                "surface-container": "#21201b",
+                                                "on-error-container": "#ffdad6",
+                                                "tertiary-fixed": "#66ff8e",
+                                                "on-surface": "#e7e2da",
+                                                "inverse-surface": "#e7e2da",
+                                                "secondary-container": "#8e6a00",
+                                                "surface-dim": "#14130f",
+                                                "on-primary-fixed": "#0f1f10",
+                                                "error-container": "#93000a",
+                                                "on-secondary-fixed-variant": "#5b4300"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.25rem",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+                                                "element-gap": "16px",
+                                                "gutter": "24px",
+                                                "margin-mobile": "20px",
+                                                "section-padding": "120px",
+                                                "container-max": "1280px"
+                                        },
+                                        "fontFamily": {
+                                                "headline-sm": [
+                                                        "Playfair Display"
+                                                ],
+                                                "display-lg": [
+                                                        "Playfair Display"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ],
+                                                "button-text": [
+                                                        "Inter"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ],
+                                                "headline-md": [
+                                                        "Playfair Display"
+                                                ],
+                                                "label-caps": [
+                                                        "Inter"
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "Playfair Display"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "headline-sm": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.4",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "64px",
+                                                        {
+                                                                "lineHeight": "1.1",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "button-text": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "1",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.3",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "label-caps": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1",
+                                                                "letterSpacing": "0.1em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+    <link rel="stylesheet" href="static/css/theme-transitions.css">
+</head>
+
+<body
+        class="bg-background text-on-background font-body-md antialiased selection:bg-secondary/30 selection:text-secondary pt-24">
+        <!-- TopNavBar -->
+        <!-- TopNavBar -->
+<nav class="bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-secondary/30 transition-all duration-300" id="main-nav">
+<div class="max-w-max-width mx-auto flex justify-between items-center px-gutter py-4">
+<a class="font-headline-sm text-headline-sm text-secondary tracking-tight" href="index.html">La Marquesa</a>
+<div class="hidden md:flex space-x-8 items-center" id="nav-links-container">
+<a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300" href="index.html">INICIO</a>
+<a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300" href="atracciones.html">ATRACCIONES</a>
+<a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300" href="menu.html">MENÚ</a>
+<a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300" href="barra.html">LA BARRA</a>
+<a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300" href="galeria.html">GALERÍA</a>
+<a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300" href="ubicacion.html">UBICACIÓN</a>
+</div>
+<div class="flex items-center space-x-4">
+<button aria-label="chat" class="text-secondary hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</button>
+<button class="md:hidden text-secondary" id="mobile-menu-btn" aria-label="Menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+        <!-- Hero Section -->
+        <header class="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 w-full h-full">
+                        <img alt="Menú" class="w-full h-full object-cover opacity-60"
+                                src="static/img/comida.jpg" />
+                        <div
+                                class="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background">
+                        </div>
+                </div>
+                <div class="relative z-10 text-center px-gutter max-w-4xl mx-auto flex flex-col items-center">
+                        <h1
+                                class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-8">
+                                Sabores de la Montaña</h1>
+                        <div class="w-20 h-0.5 bg-secondary mx-auto"></div>
+                </div>
+        </header>
+        <!-- Main Menu Content -->
+        <main class="max-w-container-max mx-auto px-gutter py-section-padding">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+                        <!-- Category 1: Carnes a la Leña -->
+                        <section>
+                                <h2
+                                        class="font-headline-sm text-headline-sm text-secondary mb-8 border-b border-secondary/20 pb-4 flex items-center gap-2">
+                                        <span class="material-symbols-outlined">local_fire_department</span>
+                                        Carnes a la Leña
+                                </h2>
+                                <div class="space-y-8">
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] flex flex-col h-full">
+                                                 <div class="aspect-[4/3] w-full overflow-hidden">
+                                                         <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                                 data-alt="A cinematic, high-contrast close-up of a premium cut of steak sizzling on a rustic wooden board, garnished with roasted spring onions and a small clay bowl of green salsa. Dark, moody lighting emphasizing the texture and juiciness of the meat against a deep black background, reflecting a sophisticated 'Rustic Luxury' aesthetic."
+                                                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCLh-KRNg6YN8ITLko_lC7ZFtRvM6i3xa0LZ5l2B_9x71OZpcrX_YuAk8PadwWBq6IHZJXaSVcSlU25BopX5T7xu01Syg6UMkVzL52QbOn3yXfZ_UAd8ebgYPjOJbhvnqT1gKf56gnVsgGyART0E9Wr0WH5sTYRPz-1UH7PXYRd29ESU2wU7MDy38VYmftrUPhB4MsP-pys7JE-sLOh5SlFY8UI1L7BMO98L7PINYQVPUOgo7L61OjyvJ6Yx5C5aj7tPOd3DHw82c" />
+                                                 </div>
+                                                 <div class="p-6 md:p-8 flex flex-col flex-grow justify-between">
+                                                          <div>
+                                                                  <div class="flex justify-between items-baseline mb-2">
+                                                                          <h3
+                                                                                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                                  Cecina</h3>
+                                                                  </div>
+                                                                  <div
+                                                                          class="w-full border-t border-dashed border-outline-variant my-3">
+                                                                  </div>
+                                                                  <p
+                                                                          class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                          Tradicional de Yecapixtla, asada al carbón con cebollitas.</p>
+                                                          </div>
+                                                          <div class="mt-4 flex flex-wrap gap-2">
+                                                                  <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Especialidad</span>
+                                                          </div>
+                                                 </div>
+                                         </article>
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] p-6 md:p-8 flex flex-col h-full justify-between">
+                                                 <div>
+                                                         <div class="flex justify-between items-baseline mb-2">
+                                                                 <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                         Arrachera</h3>
+                                                         </div>
+                                                         <div class="w-full border-t border-dashed border-outline-variant my-3">
+                                                         </div>
+                                                         <p class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                 Corte suave marinado a las finas hierbas, servido con nopal asado.</p>
+                                                 </div>
+                                                 <div class="mt-4 flex flex-wrap gap-2">
+                                                         <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Recomendado</span>
+                                                 </div>
+                                         </article>
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] p-6 md:p-8 flex flex-col h-full justify-between">
+                                                 <div>
+                                                         <div class="flex justify-between items-baseline mb-2">
+                                                                 <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                         Chorizo Toluqueño</h3>
+                                                         </div>
+                                                         <div class="w-full border-t border-dashed border-outline-variant my-3">
+                                                         </div>
+                                                         <p class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                 Chorizo verde artesanal con papas al comal.</p>
+                                                 </div>
+                                                 <div class="mt-4 flex flex-wrap gap-2">
+                                                         <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Sabor Local</span>
+                                                 </div>
+                                         </article>
+                                </div>
+                        </section>
+                        <!-- Category 2: Del Comal -->
+                        <section>
+                                <h2
+                                        class="font-headline-sm text-headline-sm text-secondary mb-8 border-b border-secondary/20 pb-4 flex items-center gap-2">
+                                        <span class="material-symbols-outlined">bakery_dining</span>
+                                        Del Comal
+                                </h2>
+                                <div class="space-y-8">
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] flex flex-col h-full">
+                                                 <div class="aspect-[4/3] w-full overflow-hidden">
+                                                         <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                                 data-alt="Black and white, high-contrast editorial style photo of traditional Mexican quesadillas cooking on a hot comal. Steam is rising elegantly from the blue corn masa. The dark background isolates the subject, highlighting the rustic texture and authentic preparation process in a sophisticated, moody atmosphere."
+                                                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQJoOFounHS3-KA64g0reGzzk4tlgfGL9Qa3PJu53kalToMBPNNXtHwOFr5xw9iRueGRddwtiXovMyTg_XvdBiJet5Egm7HpZIKy0imzdUoVY6EbkaN_L4pKLoGpCbwKuApEBLN4yhjfoprg3oNxAp-1j7QHj_nwS7Ds883uScaVvdJ7ylULXeoL1yHVlvzOblxtaMrL3bDncZnftTRQDY9kWc3PbbuJYe4X2ypCP68hdNw3Kzz-EKZfi9YRNle1_BhhV7FsqblA4" />
+                                                 </div>
+                                                 <div class="p-6 md:p-8 flex flex-col flex-grow justify-between">
+                                                         <div>
+                                                                 <div class="flex justify-between items-baseline mb-2">
+                                                                         <h3
+                                                                                 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                                 Quesadillas</h3>
+                                                                 </div>
+                                                                 <div
+                                                                         class="w-full border-t border-dashed border-outline-variant my-3">
+                                                                 </div>
+                                                                 <p
+                                                                         class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                         Masa azul con flor de calabaza, huitlacoche o champiñones.</p>
+                                                         </div>
+                                                         <div class="mt-4 flex flex-wrap gap-2">
+                                                                 <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Hecho a Mano</span>
+                                                         </div>
+                                                 </div>
+                                         </article>
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] p-6 md:p-8 flex flex-col h-full justify-between">
+                                                 <div>
+                                                         <div class="flex justify-between items-baseline mb-2">
+                                                                 <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                         Tlacoyos</h3>
+                                                         </div>
+                                                         <div class="w-full border-t border-dashed border-outline-variant my-3">
+                                                         </div>
+                                                         <p class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                 Rellenos de haba o requesón, servidos con nopales y salsa verde.</p>
+                                                 </div>
+                                                 <div class="mt-4 flex flex-wrap gap-2">
+                                                         <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Tradicional</span>
+                                                 </div>
+                                         </article>
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] p-6 md:p-8 flex flex-col h-full justify-between">
+                                                 <div>
+                                                         <div class="flex justify-between items-baseline mb-2">
+                                                                 <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                         Sopes Sencillos</h3>
+                                                         </div>
+                                                         <div class="w-full border-t border-dashed border-outline-variant my-3">
+                                                         </div>
+                                                         <p class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                 Hechos a mano con frijoles refritos, lechuga, queso fresco, crema y salsa.</p>
+                                                 </div>
+                                                 <div class="mt-4 flex flex-wrap gap-2">
+                                                         <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Auténtico</span>
+                                                 </div>
+                                         </article>
+                                </div>
+                        </section>
+                        <!-- Category 4: Bebidas Calientes -->
+                        <section>
+                                <h2
+                                        class="font-headline-sm text-headline-sm text-secondary mb-8 border-b border-secondary/20 pb-4 flex items-center gap-2">
+                                        <span class="material-symbols-outlined">coffee</span>
+                                        Bebidas Calientes
+                                </h2>
+                                <div class="space-y-8">
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] flex flex-col h-full">
+                                                 <div class="aspect-[4/3] w-full overflow-hidden">
+                                                         <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                                 data-alt="A dark, moody, black and white photograph of a traditional Mexican clay mug (jarrito) filled with hot coffee. A cinnamon stick rests inside, and thick steam rises elegantly against an almost pitch-black background. The lighting is dramatic, highlighting the texture of the clay and creating a luxurious yet rustic atmosphere."
+                                                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnCLVWM_HvqVGBL4C7opL9Sy3koey8Ee43c5ET1EkRZzaVIjDzhw9Cq1ImUrs8DOc0vwFFhM-ygO9seCiw8RKZ_iWsujiGqzwwN9LbrHBmP6BBm2YgVPGogHJKsF2TR8P1GzdW9YKhhucZedqUROXEo2A4AlPFp4W27zulvRHdzDulCzE2SnuhsAaThHcWA-53zdXT1g79mNnTwDFjSv7trJzj_7R7QMO8zlm-mWsXFzKUf9qiTzoweAVxssQv7sGICvsdPAfHYDQ" />
+                                                 </div>
+                                                 <div class="p-6 md:p-8 flex flex-col flex-grow justify-between">
+                                                         <div>
+                                                                 <div class="flex justify-between items-baseline mb-2">
+                                                                         <h3
+                                                                                 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                                 Café de Olla</h3>
+                                                                 </div>
+                                                                 <div
+                                                                         class="w-full border-t border-dashed border-outline-variant my-3">
+                                                                 </div>
+                                                                 <p
+                                                                         class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                         Endulzado con piloncillo y un toque de canela.</p>
+                                                         </div>
+                                                         <div class="mt-4 flex flex-wrap gap-2">
+                                                                 <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">De la Casa</span>
+                                                         </div>
+                                                 </div>
+                                         </article>
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] p-6 md:p-8 flex flex-col h-full justify-between">
+                                                 <div>
+                                                         <div class="flex justify-between items-baseline mb-2">
+                                                                 <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                         Chocolate</h3>
+                                                         </div>
+                                                         <div class="w-full border-t border-dashed border-outline-variant my-3">
+                                                         </div>
+                                                         <p class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                 Espumoso y artesanal, batido con molinillo de madera.</p>
+                                                 </div>
+                                                 <div class="mt-4 flex flex-wrap gap-2">
+                                                         <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Artesanal</span>
+                                                 </div>
+                                         </article>
+                                         <article
+                                                 class="bg-[#111810] border border-[#d4a84322] hover:border-secondary/50 rounded overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(238,192,88,0.1)] p-6 md:p-8 flex flex-col h-full justify-between">
+                                                 <div>
+                                                         <div class="flex justify-between items-baseline mb-2">
+                                                                 <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                                                                         Atole de Masa</h3>
+                                                         </div>
+                                                         <div class="w-full border-t border-dashed border-outline-variant my-3">
+                                                         </div>
+                                                         <p class="font-body-md text-body-md text-on-surface-variant/90 italic">
+                                                                 Bebida prehispánica caliente, espesada con masa de maíz.</p>
+                                                 </div>
+                                                 <div class="mt-4 flex flex-wrap gap-2">
+                                                         <span class="px-2 py-0.5 bg-secondary/10 text-secondary text-[11px] font-semibold uppercase tracking-wider rounded border border-secondary/20">Prehispánico</span>
+                                                 </div>
+                                         </article>
+                                </div>
+                        </section>
+                </div>
+        </main>
+        <!-- Atmospheric Divider -->
+        <section class="w-full h-64 md:h-96 relative overflow-hidden my-12">
+                <img class="w-full h-full object-cover object-center"
+                        data-alt="Cinematic wide shot of hands shaping fresh corn masa into tortillas over a smoky, rustic comal. Dark, moody lighting with warm embers glowing underneath the metal surface. The background is plunged into deep shadows, focusing entirely on the artisanal, ancient process of making traditional Mexican food in a high-end editorial style."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxhYYZIAe1rTjj8xLmIwH_8W5l29SfR7exXa4h6pNDZuGtN8h4OXshefdl9DUFr0reJA_SfX_acOV435QkJsxK0anL4BAv8GxtjXL4ULr_SV3dVvh3VIaufd6VtE6Z5jLMcAlm-Y9uwQ--E8fldQTFDYuDle9iW4qbUU-tUiQMACvrwgrLjJnqZ4_TE3KgotlA4AktTUFWjZWcoQiOdnRioVURTRatb9jTpPYD_NcMHe1s80bCbZXgiECjxIF4qXUwvStAHFmfXjY" />
+                <div class="absolute inset-0 bg-background/50"></div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-secondary/20">
+                <div
+                        class="grid grid-cols-1 md:grid-cols-3 gap-element-gap px-gutter py-section-padding max-w-container-max mx-auto">
+                        <div class="flex flex-col items-start gap-4">
+                                <span class="font-headline-sm text-headline-sm text-secondary">La Marquesa</span>
+                                <p class="font-body-md text-body-md text-on-surface-variant">© 2024 LA MARQUESA. TODOS
+                                        LOS DERECHOS RESERVADOS.</p>
+                        </div>
+                        <div class="md:col-span-2 flex flex-wrap gap-6 justify-start md:justify-end">
+                                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+                                        href="index.html">INICIO</a>
+                                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+                                        href="atracciones.html">ATRACCIONES</a>
+                                <a class="font-label-caps text-label-caps text-secondary opacity-100" href="menu.html">MENÚ</a>
+                                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+                                        href="barra.html">LA BARRA</a>
+                                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+                                        href="galeria.html">GALERÍA</a>
+                                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100"
+                                        href="ubicacion.html">UBICACIÓN</a>
+                        </div>
+                </div>
+        </footer>
+    <script src="static/js/theme-transitions.js"></script>
+</body>
+
+</html>

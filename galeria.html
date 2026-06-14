@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>La Marquesa - Galería</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@400..700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "on-primary": "#243423",
+                                                "secondary": "#eec058",
+                                                "on-secondary": "#402d00",
+                                                "background": "#14130f",
+                                                "on-primary-fixed": "#0f1f10",
+                                                "primary-fixed": "#d4e8cf",
+                                                "tertiary": "#3de273",
+                                                "surface": "#14130f",
+                                                "inverse-surface": "#e7e2da",
+                                                "on-error-container": "#ffdad6",
+                                                "surface-container-high": "#2b2a25",
+                                                "on-error": "#690005",
+                                                "on-tertiary-fixed-variant": "#005322",
+                                                "tertiary-container": "#001c07",
+                                                "on-secondary-fixed": "#261a00",
+                                                "surface-container-low": "#1d1c17",
+                                                "outline-variant": "#434842",
+                                                "on-secondary-fixed-variant": "#5b4300",
+                                                "on-secondary-container": "#fff3e1",
+                                                "on-background": "#e7e2da",
+                                                "on-primary-fixed-variant": "#3a4b39",
+                                                "on-tertiary-container": "#009443",
+                                                "primary-container": "#0a1a0b",
+                                                "on-primary-container": "#728570",
+                                                "surface-tint": "#b8ccb4",
+                                                "inverse-on-surface": "#32302b",
+                                                "secondary-container": "#8e6a00",
+                                                "tertiary-fixed-dim": "#3de273",
+                                                "tertiary-fixed": "#66ff8e",
+                                                "error-container": "#93000a",
+                                                "surface-container-highest": "#36352f",
+                                                "secondary-fixed": "#ffdf9f",
+                                                "surface-dim": "#14130f",
+                                                "surface-bright": "#3b3934",
+                                                "surface-container": "#21201b",
+                                                "on-tertiary": "#003915",
+                                                "primary": "#b8ccb4",
+                                                "on-surface": "#e7e2da",
+                                                "on-surface-variant": "#c4c8bf",
+                                                "surface-variant": "#36352f",
+                                                "outline": "#8e928a",
+                                                "primary-fixed-dim": "#b8ccb4",
+                                                "inverse-primary": "#51634f",
+                                                "on-tertiary-fixed": "#002109",
+                                                "surface-container-lowest": "#0f0e0a",
+                                                "secondary-fixed-dim": "#eec058",
+                                                "error": "#ffb4ab"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "stack-lg": "32px",
+                                                "section-padding-mobile": "60px",
+                                                "gutter": "24px",
+                                                "stack-sm": "8px",
+                                                "max-width": "1280px",
+                                                "section-padding": "100px",
+                                                "stack-md": "16px"
+                                        },
+                                        "fontFamily": {
+                                                "accent-label": [
+                                                        "Inter"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ],
+                                                "headline-md": [
+                                                        "Playfair Display"
+                                                ],
+                                                "headline-sm": [
+                                                        "Playfair Display"
+                                                ],
+                                                "display-lg": [
+                                                        "Playfair Display"
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "Playfair Display"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "accent-label": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "letterSpacing": "0.15em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "26px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "48px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-sm": [
+                                                        "28px",
+                                                        {
+                                                                "lineHeight": "36px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "72px",
+                                                        {
+                                                                "lineHeight": "84px",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "44px",
+                                                        {
+                                                                "lineHeight": "52px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "30px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                .material-symbols-outlined {
+                        font-family: 'Material Symbols Outlined';
+                        font-weight: normal;
+                        font-style: normal;
+                        font-size: 24px;
+                        line-height: 1;
+                        letter-spacing: normal;
+                        text-transform: none;
+                        display: inline-block;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        direction: ltr;
+                        -webkit-font-feature-settings: 'liga';
+                        -webkit-font-smoothing: antialiased;
+                }
+
+                .masonry-grid {
+                        column-count: 1;
+                        column-gap: 24px;
+                }
+
+                @media (min-width: 768px) {
+                        .masonry-grid {
+                                column-count: 2;
+                        }
+                }
+
+                @media (min-width: 1024px) {
+                        .masonry-grid {
+                                column-count: 3;
+                        }
+                }
+
+                .masonry-item {
+                        break-inside: avoid;
+                        margin-bottom: 24px;
+                }
+
+                /* Smooth scrolling */
+                html {
+                        scroll-behavior: smooth;
+                }
+        </style>
+        <link rel="stylesheet" href="static/css/theme-transitions.css">
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+        <!-- TopNavBar (Shared Component) -->
+        <!-- TopNavBar -->
+        <nav class="bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-secondary/30 transition-all duration-300"
+                id="main-nav">
+                <div class="max-w-max-width mx-auto flex justify-between items-center px-gutter py-4">
+                        <a class="font-headline-sm text-headline-sm text-secondary tracking-tight" href="index.html">La
+                                Marquesa</a>
+                        <div class="hidden md:flex space-x-8 items-center" id="nav-links-container">
+                                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                                        href="index.html">INICIO</a>
+                                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                                        href="atracciones.html">ATRACCIONES</a>
+                                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                                        href="menu.html">MENÚ</a>
+                                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                                        href="barra.html">LA BARRA</a>
+                                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                                        href="galeria.html">GALERÍA</a>
+                                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                                        href="ubicacion.html">UBICACIÓN</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                                <button aria-label="chat"
+                                        class="text-secondary hover:scale-105 transition-transform duration-300">
+                                        <span class="material-symbols-outlined" data-icon="chat">chat</span>
+                                </button>
+                                <button class="md:hidden text-secondary" id="mobile-menu-btn" aria-label="Menu">
+                                        <span class="material-symbols-outlined">menu</span>
+                                </button>
+                        </div>
+                </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="flex-grow pt-[100px]"> <!-- Added top padding to account for fixed nav -->
+                <!-- Hero Section -->
+                <section
+                        class="py-section-padding-mobile md:py-section-padding bg-background flex flex-col items-center justify-center text-center px-gutter">
+                        <h1
+                                class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-8">
+                                GALERÍA</h1>
+                        <div class="w-10 h-px bg-secondary mx-auto"></div>
+                </section>
+                <!-- Filter Tabs Removed -->
+                <!-- Masonry Gallery -->
+                <section class="max-w-max-width mx-auto px-gutter pb-section-padding">
+                        <div class="masonry-grid" id="gallery-grid">
+                                <!-- Gallery Item 1 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Lago Místico"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/Ahuyenta-inseguridad-a-turistas-de-La-Marquesa3.jpg" />
+                                </div>
+                                <!-- Gallery Item 2 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Valle de Dinosaurios"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/d1-1-1024x683.jpg" />
+                                </div>
+                                <!-- Gallery Item 3 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Zorbing Extremo"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/unnamed (1).jpg" />
+                                </div>
+                                <!-- Gallery Item 4 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Entrada Principal"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/Rancho Viejo.jpg" />
+                                </div>
+                                <!-- Gallery Item 5 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Rutas en Cuatrimoto"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/maxresdefault.jpg" />
+                                </div>
+                                <!-- Gallery Item 6 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Tirolesa Panorámica"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/Canopy-Las-Golondrinas-1-e1635561376796.jpg" />
+                                </div>
+                                <!-- Gallery Item 7 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Paseos a Caballo"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/la-marquesa-c.jpg" />
+                                </div>
+                                <!-- Gallery Item 8 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Navegación en Canoa"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/unnamed.jpg" />
+                                </div>
+                                <!-- Gallery Item 9 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Gastronomía Local"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/comida.jpg" />
+                                </div>
+                                <!-- Gallery Item 10 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Mixología de Autor"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/d2-1.jpg" />
+                                </div>
+                                <!-- Gallery Item 11 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Gotcha en el Bosque"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/gotcha-01-768x576.jpg" />
+                                </div>
+                                <!-- Gallery Item 12 -->
+                                <div
+                                        class="masonry-item overflow-hidden rounded bg-[#111810] border border-transparent hover:border-secondary transition-all duration-500 shadow-[0_0_0_rgba(212,168,67,0)] hover:shadow-[0_0_10px_rgba(212,168,67,0.5)]">
+                                        <img alt="Fogatas Nocturnas"
+                                                class="w-full h-auto object-cover transition-transform duration-700 hover:scale-110"
+                                                src="static/img/unnamed (2).jpg" />
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer (Shared Component) -->
+        <footer class="bg-surface-container-lowest border-t border-secondary/30 w-full">
+                <div
+                        class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-3 gap-stack-lg px-gutter py-section-padding">
+                        <!-- Brand -->
+                        <div class="flex flex-col items-center md:items-start">
+                                <a class="font-headline-sm text-headline-sm text-secondary mb-4" href="index.html">La
+                                        Marquesa</a>
+                                <p class="font-body-md text-body-md text-on-background/70 text-center md:text-left">
+                                        Descubre la majestuosidad de la naturaleza en un entorno de lujo rústico
+                                        inigualable.
+                                </p>
+                        </div>
+                        <!-- Navigation Links -->
+                        <div class="flex flex-col items-center md:items-start space-y-4">
+                                <h4 class="font-accent-label text-accent-label text-secondary mb-2">NAVEGACIÓN</h4>
+                                <a class="font-body-md text-body-md text-on-background/70 hover:text-secondary hover:translate-y-[-2px] transition-transform" href="index.html">Inicio</a>
+                                <a class="font-body-md text-body-md text-on-background/70 hover:text-secondary hover:translate-y-[-2px] transition-transform" href="atracciones.html">Atracciones</a>
+                                <a class="font-body-md text-body-md text-on-background/70 hover:text-secondary hover:translate-y-[-2px] transition-transform" href="menu.html">Menú</a>
+                                <a class="font-body-md text-body-md text-on-background/70 hover:text-secondary hover:translate-y-[-2px] transition-transform" href="barra.html">La Barra</a>
+                                <a class="font-body-md text-body-md text-on-background/70 hover:text-secondary hover:translate-y-[-2px] transition-transform" href="galeria.html">Galería</a>
+                                <a class="font-body-md text-body-md text-secondary transition-colors" href="ubicacion.html">Ubicación</a>
+                        </div>
+                        <!-- Contact / Social -->
+                        <div class="flex flex-col items-center md:items-start">
+                                <h4 class="font-accent-label text-accent-label text-secondary mb-4">SÍGUENOS</h4>
+                                <div class="flex space-x-4">
+                                        <!-- Minimalist Social Icons -->
+                                        <a class="w-10 h-10 border border-secondary/30 rounded flex items-center justify-center text-on-background/70 hover:text-secondary hover:border-secondary transition-all"
+                                                href="#">
+                                                <span class="material-symbols-outlined">photo_camera</span>
+                                        </a>
+                                        <a class="w-10 h-10 border border-secondary/30 rounded flex items-center justify-center text-on-background/70 hover:text-secondary hover:border-secondary transition-all"
+                                                href="#">
+                                                <span class="material-symbols-outlined">share</span>
+                                        </a>
+                                </div>
+                                <div class="mt-8 border-t border-secondary/30 w-full pt-4 text-center md:text-left">
+                                        <p class="font-accent-label text-accent-label text-on-background/50">
+                                                © 2026 La Marquesa. Todos los derechos reservados.
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+        <!-- Floating WhatsApp Button -->
+        <a class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-[0_4px_14px_0_rgba(37,211,102,0.39)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.23)] hover:scale-105 transition-all duration-300 z-50 flex items-center justify-center"
+                href="https://wa.me/1234567890" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+        </a>
+        <!-- Interactive Script for Filtering Removed -->
+        <script src="static/js/theme-transitions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>La Marquesa - Inicio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@400;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#243423",
+                        "secondary": "#eec058",
+                        "on-secondary": "#402d00",
+                        "background": "#14130f",
+                        "on-primary-fixed": "#0f1f10",
+                        "primary-fixed": "#d4e8cf",
+                        "tertiary": "#3de273",
+                        "surface": "#14130f",
+                        "inverse-surface": "#e7e2da",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-high": "#2b2a25",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed-variant": "#005322",
+                        "tertiary-container": "#001c07",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-container-low": "#1d1c17",
+                        "outline-variant": "#434842",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "on-secondary-container": "#fff3e1",
+                        "on-background": "#e7e2da",
+                        "on-primary-fixed-variant": "#3a4b39",
+                        "on-tertiary-container": "#009443",
+                        "primary-container": "#0a1a0b",
+                        "on-primary-container": "#728570",
+                        "surface-tint": "#b8ccb4",
+                        "inverse-on-surface": "#32302b",
+                        "secondary-container": "#8e6a00",
+                        "tertiary-fixed-dim": "#3de273",
+                        "tertiary-fixed": "#66ff8e",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#36352f",
+                        "secondary-fixed": "#ffdf9f",
+                        "surface-dim": "#14130f",
+                        "surface-bright": "#3b3934",
+                        "surface-container": "#21201b",
+                        "on-tertiary": "#003915",
+                        "primary": "#b8ccb4",
+                        "on-surface": "#e7e2da",
+                        "on-surface-variant": "#c4c8bf",
+                        "surface-variant": "#36352f",
+                        "outline": "#8e928a",
+                        "primary-fixed-dim": "#b8ccb4",
+                        "inverse-primary": "#51634f",
+                        "on-tertiary-fixed": "#002109",
+                        "surface-container-lowest": "#0f0e0a",
+                        "secondary-fixed-dim": "#eec058",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "section-padding-mobile": "60px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "max-width": "1280px",
+                        "section-padding": "100px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "accent-label": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "accent-label": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "headline-md": ["40px", { "lineHeight": "48px", "fontWeight": "600" }],
+                        "headline-sm": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-glow:hover {
+            box-shadow: 0 0 15px rgba(212, 168, 67, 0.3);
+            border-color: #d4a843;
+        }
+
+        .pulse-whatsapp {
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .text-shadow-hero {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #080808;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d4a843;
+            border-radius: 4px;
+        }
+    </style>
+    <link rel="stylesheet" href="static/css/theme-transitions.css">
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+    <!-- TopNavBar -->
+    <!-- TopNavBar -->
+    <nav class="bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-secondary/30 transition-all duration-300"
+        id="main-nav">
+        <div class="max-w-max-width mx-auto flex justify-between items-center px-gutter py-4">
+            <a class="font-headline-sm text-headline-sm text-secondary tracking-tight" href="index.html">La Marquesa</a>
+            <div class="hidden md:flex space-x-8 items-center" id="nav-links-container">
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="index.html">INICIO</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="atracciones.html">ATRACCIONES</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="menu.html">MENÚ</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="barra.html">LA BARRA</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="galeria.html">GALERÍA</a>
+                <a class="font-accent-label text-accent-label text-on-background/80 hover:text-secondary transition-colors hover:scale-105 duration-300"
+                    href="ubicacion.html">UBICACIÓN</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button aria-label="chat" class="text-secondary hover:scale-105 transition-transform duration-300">
+                    <span class="material-symbols-outlined" data-icon="chat">chat</span>
+                </button>
+                <button class="md:hidden text-secondary" id="mobile-menu-btn" aria-label="Menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-[#080808]"
+            style="background-image: url('static/img/maxresdefault.jpg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-[#1a2e1b]/30 to-[#14130f]/60"></div>
+        </div>
+        <div class="relative z-10 text-center px-gutter flex flex-col items-center mt-20">
+            <h1
+                class="font-display-lg text-display-lg md:text-[90px] text-inverse-surface mb-4 text-shadow-hero tracking-tight">
+                La Marquesa</h1>
+            <p class="font-headline-sm text-headline-sm text-secondary italic mb-12 text-shadow-hero">Valle de Rancho
+                Viejo</p>
+            <a class="inline-flex items-center justify-center bg-secondary text-background font-accent-label text-accent-label px-8 py-4 rounded hover:bg-[#c99f38] transition-colors duration-300"
+                href="#">
+                <span class="material-symbols-outlined mr-2 text-[18px]">chat</span>
+                RESERVA POR WHATSAPP
+            </a>
+        </div>
+    </header>
+    <!-- Welcome Strip -->
+    <section class="bg-[#1a2e1b] py-section-padding-mobile md:py-section-padding px-gutter relative z-20">
+        <div class="max-w-max-width mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <h2 class="font-headline-md text-headline-md text-secondary mb-6">Aire de Montaña y Tradición</h2>
+                <div class="w-10 h-px bg-secondary mb-6"></div>
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Ubicado en el corazón del Valle de Rancho Viejo, La Marquesa ofrece un refugio rústico de lujo donde
+                    la naturaleza virgen se encuentra con la gastronomía de herencia. Respira el aire puro del bosque,
+                    explora senderos escondidos y disfruta de sabores auténticos forjados en leña y tradición.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                <div
+                    class="flex flex-col items-center p-6 border border-secondary/10 rounded bg-[#0a1a0b] gold-glow transition-all duration-300">
+                    <span class="material-symbols-outlined text-secondary text-4xl mb-4"
+                        style="font-variation-settings: 'FILL' 1;">explore</span>
+                    <h3 class="font-accent-label text-accent-label text-inverse-surface">ATRACCIONES</h3>
+                    <p class="text-sm mt-2 text-on-surface-variant">Aventura Total</p>
+                </div>
+                <div
+                    class="flex flex-col items-center p-6 border border-secondary/10 rounded bg-[#0a1a0b] gold-glow transition-all duration-300">
+                    <span class="material-symbols-outlined text-secondary text-4xl mb-4"
+                        style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                    <h3 class="font-accent-label text-accent-label text-inverse-surface">COCINA</h3>
+                    <p class="text-sm mt-2 text-on-surface-variant">Sabor a Leña</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-surface-container-lowest w-full border-t border-secondary/30 relative z-20">
+        <div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-3 gap-stack-lg px-gutter py-section-padding">
+            <div class="flex flex-col items-start md:items-center justify-center">
+                <span class="font-headline-sm text-headline-sm text-secondary mb-4">La Marquesa</span>
+                <p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">
+                    Valle de Rancho Viejo. Un refugio de herencia, calidez y exclusividad en las alturas.
+                </p>
+            </div>
+            <div class="flex flex-col items-start md:items-center justify-center">
+                <h4 class="font-accent-label text-accent-label text-secondary mb-6">NAVEGACIÓN</h4>
+                <ul class="space-y-4 text-center md:text-left">
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-tertiary transition-colors translate-y-[-2px]"
+                            href="index.html">Inicio</a></li>
+                    <li><a class="font-body-md text-body-md text-on-background/70 hover:text-secondary transition-colors"
+                            href="atracciones.html">Atracciones</a></li>
+                    <li><a class="font-body-md text-body-md text-on-background/70 hover:text-secondary transition-colors"
+                            href="menu.html">Menú</a></li>
+                    <li><a class="font-body-md text-body-md text-on-background/70 hover:text-secondary transition-colors"
+                            href="barra.html">La Barra</a></li>
+                    <li><a class="font-body-md text-body-md text-on-background/70 hover:text-secondary transition-colors"
+                            href="galeria.html">Galería</a></li>
+                    <li><a class="font-body-md text-body-md text-on-background/70 hover:text-secondary transition-colors"
+                            href="ubicacion.html">Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-start md:items-center justify-center">
+                <h4 class="font-accent-label text-accent-label text-secondary mb-6">CONTACTO</h4>
+                <div class="space-y-4 text-center md:text-left flex flex-col items-center md:items-start">
+                    <a class="flex items-center text-on-background/70 hover:text-secondary transition-colors" href="#">
+                        <span class="material-symbols-outlined mr-2">location_on</span>
+                        Valle de Rancho Viejo
+                    </a>
+                    <a class="flex items-center text-on-background/70 hover:text-secondary transition-colors" href="#">
+                        <span class="material-symbols-outlined mr-2">mail</span>
+                        hola@lamarquesa.mx
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-secondary/10 py-6 px-gutter">
+            <p class="font-body-md text-body-md text-on-surface-variant text-center text-sm">
+                © 2026 La Marquesa. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp CTA -->
+    <a aria-label="Contactar por WhatsApp"
+        class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg z-50 pulse-whatsapp flex items-center justify-center hover:bg-[#20b858] transition-colors"
+        href="#">
+        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+    </a>
+    <script>
+        // Shrink nav on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+    <script src="static/js/theme-transitions.js"></script>
+</body>
+
+</html>
